@@ -18,5 +18,16 @@ const heading2 = React.createElement(
     },
     "Heading 2"
 );
+const container = React.createElement(
+    "div",
+    {
+        id:"container",
+        hello: "world",
+    },
+    [heading,heading2]
+ );
+console.log(heading);
  
-  
+const root = ReactDOM.createRoot(document.getElementById("root"));
+ 
+root.render(container); 
